@@ -20,6 +20,24 @@
             Console.WriteLine($"Votre solde est de : {compte1.Solde} €");
             compte1.Depot(1_000_000);
             Console.WriteLine($"Votre solde est de : {compte1.Solde} €");
+
+            Courant compte2 = new Courant();
+            compte2.Numero = "BE54 1234 1234 1234";
+            compte2.LigneDeCredit = 0;
+            compte2.Titulaire = p1;
+
+            Console.WriteLine($"Votre solde est de : {compte2.Solde} €");
+            compte2.Depot(50_000);
+            Console.WriteLine($"Votre solde est de : {compte2.Solde} €");
+
+            Banque banque1 = new Banque();
+            banque1.Nom = "LeBonIntérêt!";
+            banque1.Ajouter(compte1);
+            banque1.Ajouter(compte2);
+
+            Courant compteToRemove = banque1["BE54 1234 1234 1234"];
+
+            banque1.Supprimer(compteToRemove.Numero);
         }
     }
 }
