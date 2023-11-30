@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-ProprieteAutoCalcule",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Banque", "Exo-Banque\Exo-Banque.csproj", "{4057F5F2-6837-42A0-8870-A6462E758B54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Indexeur", "Demo-Indexeur\Demo-Indexeur.csproj", "{6A3C6EBD-6655-4D03-B7B2-12C9A050729B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{4057F5F2-6837-42A0-8870-A6462E758B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4057F5F2-6837-42A0-8870-A6462E758B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4057F5F2-6837-42A0-8870-A6462E758B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A3C6EBD-6655-4D03-B7B2-12C9A050729B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3C6EBD-6655-4D03-B7B2-12C9A050729B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3C6EBD-6655-4D03-B7B2-12C9A050729B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3C6EBD-6655-4D03-B7B2-12C9A050729B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{C6D373DD-30B4-4A81-BB5A-7DF70A044F7E} = {8C3FB272-3B3E-4855-B306-3F4467445826}
 		{E9C3669F-9004-4CB0-99F9-2777DE3E53E0} = {8C3FB272-3B3E-4855-B306-3F4467445826}
 		{4057F5F2-6837-42A0-8870-A6462E758B54} = {700AABFC-3664-4CC3-AA5B-3829C348C47D}
+		{6A3C6EBD-6655-4D03-B7B2-12C9A050729B} = {8C3FB272-3B3E-4855-B306-3F4467445826}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E6B0A86-DD53-4BF5-B2DA-B97F4133983C}
