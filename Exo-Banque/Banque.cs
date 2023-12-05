@@ -45,5 +45,25 @@ namespace Exo_Banque
             if (!_comptes.ContainsKey(numero)) return;
             _comptes.Remove(numero);
         }
+
+        public double AvoirDesComptes(Personne personne)
+        {
+            if(personne is null) return -1; //AvoirDesComptes est strictement positif, donc -1 est impossible, on garde -1 pour indiquer une erreur, plus tard utilisation des exceptions
+            List<Courant> courants = new List<Courant>();
+            foreach (Courant courant in _comptes.Values)
+            {
+                if (courant.Titulaire == personne)
+                {
+                    courants.Add(courant);
+                }
+            }
+            if(courants.Count <= 0) return -1; //Gérer les exceptions
+            double avoir = 0;
+            foreach (Courant courant in courants)
+            {
+                avoir += courant;
+            }
+            return avoir;
+        }
     }
 }

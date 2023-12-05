@@ -37,5 +37,19 @@ namespace Exo_Banque
             if(montant <= 0) return;
             Solde += montant;
         }
+
+        public static double operator +(Courant left, Courant right)
+        {
+            double leftSolde = (left.Solde < 0)? 0 : left.Solde;
+            double rightSolde = (right.Solde < 0)? 0 : right.Solde;
+            return leftSolde + rightSolde;
+        }
+
+        public static double operator +(double left, Courant right)
+        {
+            left = Math.Max(0, left);
+            double rightSolde = Math.Max(0, right.Solde);
+            return left + rightSolde;
+        }
     }
 }
