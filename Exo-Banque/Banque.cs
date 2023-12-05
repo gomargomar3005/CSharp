@@ -8,9 +8,9 @@ namespace Exo_Banque
 {
     internal class Banque
     {
-        private Dictionary<string, Courant> _comptes = new Dictionary<string, Courant>();
+        private Dictionary<string, Compte> _comptes = new Dictionary<string, Compte>();
         public string Nom { get; set; }
-        public Courant this[string numero]
+        public Compte this[string numero]
         {
             get
             {
@@ -28,7 +28,7 @@ namespace Exo_Banque
             }
         }
 
-        public void Ajouter(Courant compte)
+        public void Ajouter(Compte compte)
         {
             if (compte is null) return;
             //Vu que nous sommes dans une class, les champs (variables membres) peuvent être initialisé, donc pas besoin de vérifier avec :
@@ -49,19 +49,19 @@ namespace Exo_Banque
         public double AvoirDesComptes(Personne personne)
         {
             if(personne is null) return -1; //AvoirDesComptes est strictement positif, donc -1 est impossible, on garde -1 pour indiquer une erreur, plus tard utilisation des exceptions
-            List<Courant> courants = new List<Courant>();
-            foreach (Courant courant in _comptes.Values)
+            List<Compte> comptes = new List<Compte>();
+            foreach (Compte compte in _comptes.Values)
             {
-                if (courant.Titulaire == personne)
+                if (compte.Titulaire == personne)
                 {
-                    courants.Add(courant);
+                    comptes.Add(compte);
                 }
             }
-            if(courants.Count <= 0) return -1; //Gérer les exceptions
+            if(comptes.Count <= 0) return -1; //Gérer les exceptions
             double avoir = 0;
-            foreach (Courant courant in courants)
+            foreach (Compte compte in comptes)
             {
-                avoir += courant;
+                avoir += compte;
             }
             return avoir;
         }

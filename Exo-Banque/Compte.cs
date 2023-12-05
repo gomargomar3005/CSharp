@@ -29,5 +29,19 @@ namespace Exo_Banque
             if (montant > Solde + limite) return; //Exception
             Solde -= montant;
         }
+
+        public static double operator +(Compte left, Compte right)
+        {
+            double leftSolde = (left.Solde < 0) ? 0 : left.Solde;
+            double rightSolde = (right.Solde < 0) ? 0 : right.Solde;
+            return leftSolde + rightSolde;
+        }
+
+        public static double operator +(double left, Compte right)
+        {
+            left = Math.Max(0, left);
+            double rightSolde = Math.Max(0, right.Solde);
+            return left + rightSolde;
+        }
     }
 }
