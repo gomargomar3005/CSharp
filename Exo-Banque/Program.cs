@@ -35,6 +35,15 @@
 
             Console.WriteLine($"Le titulaire {p1.Nom} {p1.Prenom} à comme avoirs : {banque1.AvoirDesComptes(p1)} €");
 
+            Epargne compte3 = new Epargne();
+            compte3.Titulaire = p1;
+            compte3.Numero = "BE75 1234 1234 1234";
+            compte3.Depot(10_000);
+            Console.WriteLine($"Sur le compte {compte3.Numero}, le solde est de : {compte3.Solde} €");
+            compte3.Retrait(500);
+            Console.WriteLine($"Sur le compte {compte3.Numero}, le solde est de : {compte3.Solde} €.\nLe dernier retrait a été effectué le {compte3.DateDernierRetrait}");
+
+
         }
     }
 }
