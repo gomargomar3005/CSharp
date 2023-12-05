@@ -3,23 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Namespace", "Demo-Namespace\Demo-Namespace.csproj", "{2CC781A3-FDE7-4F4D-8AB0-63C520563072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Namespace", "Demo-Namespace\Demo-Namespace.csproj", "{2CC781A3-FDE7-4F4D-8AB0-63C520563072}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Démos", "Démos", "{8C3FB272-3B3E-4855-B306-3F4467445826}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exos", "Exos", "{700AABFC-3664-4CC3-AA5B-3829C348C47D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Encapsulation", "Demo-Encapsulation\Demo-Encapsulation.csproj", "{F6F5906F-3BE7-4B1A-A4A1-38997BEAA358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Encapsulation", "Demo-Encapsulation\Demo-Encapsulation.csproj", "{F6F5906F-3BE7-4B1A-A4A1-38997BEAA358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Class", "Demo-Class\Demo-Class.csproj", "{C6D373DD-30B4-4A81-BB5A-7DF70A044F7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Class", "Demo-Class\Demo-Class.csproj", "{C6D373DD-30B4-4A81-BB5A-7DF70A044F7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-ProprieteAutoCalcule", "Demo-ProprieteAutoCalcule\Demo-ProprieteAutoCalcule.csproj", "{E9C3669F-9004-4CB0-99F9-2777DE3E53E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-ProprieteAutoCalcule", "Demo-ProprieteAutoCalcule\Demo-ProprieteAutoCalcule.csproj", "{E9C3669F-9004-4CB0-99F9-2777DE3E53E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Banque", "Exo-Banque\Exo-Banque.csproj", "{4057F5F2-6837-42A0-8870-A6462E758B54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exo-Banque", "Exo-Banque\Exo-Banque.csproj", "{4057F5F2-6837-42A0-8870-A6462E758B54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Indexeur", "Demo-Indexeur\Demo-Indexeur.csproj", "{6A3C6EBD-6655-4D03-B7B2-12C9A050729B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Indexeur", "Demo-Indexeur\Demo-Indexeur.csproj", "{6A3C6EBD-6655-4D03-B7B2-12C9A050729B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Operateurs", "Demo-Operateurs\Demo-Operateurs.csproj", "{E86DE12A-DEA0-4B7E-9EB2-ECA3CC1FC982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Operateurs", "Demo-Operateurs\Demo-Operateurs.csproj", "{E86DE12A-DEA0-4B7E-9EB2-ECA3CC1FC982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-HeritageSimple", "Demo-HeritageSimple\Demo-HeritageSimple.csproj", "{1A42F57D-B448-447D-86F7-D6C9AF00FE7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{E86DE12A-DEA0-4B7E-9EB2-ECA3CC1FC982}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86DE12A-DEA0-4B7E-9EB2-ECA3CC1FC982}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86DE12A-DEA0-4B7E-9EB2-ECA3CC1FC982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A42F57D-B448-447D-86F7-D6C9AF00FE7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A42F57D-B448-447D-86F7-D6C9AF00FE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A42F57D-B448-447D-86F7-D6C9AF00FE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A42F57D-B448-447D-86F7-D6C9AF00FE7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{4057F5F2-6837-42A0-8870-A6462E758B54} = {700AABFC-3664-4CC3-AA5B-3829C348C47D}
 		{6A3C6EBD-6655-4D03-B7B2-12C9A050729B} = {8C3FB272-3B3E-4855-B306-3F4467445826}
 		{E86DE12A-DEA0-4B7E-9EB2-ECA3CC1FC982} = {8C3FB272-3B3E-4855-B306-3F4467445826}
+		{1A42F57D-B448-447D-86F7-D6C9AF00FE7C} = {8C3FB272-3B3E-4855-B306-3F4467445826}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E6B0A86-DD53-4BF5-B2DA-B97F4133983C}
