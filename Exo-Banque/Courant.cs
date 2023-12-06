@@ -26,5 +26,9 @@ namespace Exo_Banque
             Retrait(montant, LigneDeCredit);
         }
 
+        protected override double CalculInteret()
+        {
+            return (Solde > 0) ? Solde * 0.03 : Solde * 0.0975;
+        }
     }
 }

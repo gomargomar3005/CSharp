@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exo_Banque
 {
-    internal class Compte
+    internal abstract class Compte
     {
         public string Numero { get; set; }
         public double Solde { get; private set; }
@@ -28,6 +28,12 @@ namespace Exo_Banque
             if (montant <= 0) return; //Exception
             if (montant > Solde + limite) return; //Exception
             Solde -= montant;
+        }
+        protected abstract double CalculInteret();
+
+        public void AppliquerInteret()
+        {
+            Solde += CalculInteret();
         }
 
         public static double operator +(Compte left, Compte right)

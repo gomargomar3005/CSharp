@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            //Console.OutputEncoding = System.Text.Encoding.Unicode;
             Personne p1 = new Personne();
             p1.Nom = "Legrain";
             p1.Prenom = "Samuel";
@@ -48,6 +48,13 @@
             Compte compteExemple = banque1["BE55 1234 1234 1234"];
 
             Console.WriteLine($"Le titulaire {compteExemple.Titulaire.Nom} {compteExemple.Titulaire.Prenom} à comme avoirs : {banque1.AvoirDesComptes(compteExemple.Titulaire)} €");
+
+            compte1.AppliquerInteret();
+            Console.WriteLine($"Sur le compte {compte1.Numero}, le solde est de : {compte1.Solde} €");
+            compte2.AppliquerInteret();
+            Console.WriteLine($"Sur le compte {compte2.Numero}, le solde est de : {compte2.Solde} €");
+            compte3.AppliquerInteret();
+            Console.WriteLine($"Sur le compte {compte3.Numero}, le solde est de : {compte3.Solde} €");
         }
     }
 }
