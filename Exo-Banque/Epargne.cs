@@ -13,7 +13,17 @@ namespace Exo_Banque
         #endregion
 
         #region Propriétés
-        public DateTime? DateDernierRetrait { get; set; }   //Modification par rapport à l'énoncé, plus judicieux d'avoir un null au début
+        public DateTime? DateDernierRetrait { get; private set; }   //Modification par rapport à l'énoncé, plus judicieux d'avoir un null au début
+        #endregion
+
+        #region Constructeurs
+        public Epargne(string numero, Personne titulaire) : base(numero, titulaire)
+        {
+        }
+
+        public Epargne(string numero, Personne titulaire, double solde) : base(numero, titulaire, solde)
+        {
+        } 
         #endregion
 
         #region Méthodes

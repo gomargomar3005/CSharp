@@ -8,10 +8,23 @@ namespace Exo_Banque
 {
     internal abstract class Compte : IBanker //,ICustomer //Pas exclus de mettre les deux interfaces
     {
-        public string Numero { get; set; }
-        public double Solde { get; private set; }
-        public Personne Titulaire { get; set; }
 
+        public string Numero { get; private set; }
+        public double Solde { get; private set; }
+        public Personne Titulaire { get; private set; }
+
+        public Compte(string numero, Personne titulaire)
+        {
+            Numero = numero;
+            Titulaire = titulaire;
+        }
+
+        public Compte(string numero, Personne titulaire, double solde) : this(numero, titulaire)
+        {
+            Solde = solde;
+        }
+
+        
         public void Depot(double montant)
         {
             if (montant <= 0) return;

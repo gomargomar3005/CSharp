@@ -5,23 +5,14 @@
         static void Main(string[] args)
         {
             //Console.OutputEncoding = System.Text.Encoding.Unicode;
-            Personne p1 = new Personne();
-            p1.Nom = "Legrain";
-            p1.Prenom = "Samuel";
-            p1.DateNaiss = new DateTime(1987, 9, 27);
+            Personne p1 = new Personne("Legrain","Samuel",new DateTime(1987, 9, 27));
 
-            Courant compte1 = new Courant();
-            compte1.Numero = "BE55 1234 1234 1234";
-            compte1.LigneDeCredit = 100;
-            compte1.Titulaire = p1;
+            Courant compte1 = new Courant("BE55 1234 1234 1234", 100, p1);
 
             compte1.Retrait(50);
             Console.WriteLine($"Sur le compte {compte1.Numero}, le solde est de : {compte1.Solde} €");
 
-            Courant compte2 = new Courant();
-            compte2.Numero = "BE54 1234 1234 1234";
-            compte2.LigneDeCredit = 200;
-            compte2.Titulaire = p1;
+            Courant compte2 = new Courant("BE54 1234 1234 1234",200,p1);
 
             compte2.Depot(50_000);
             Console.WriteLine($"Sur le compte {compte2.Numero}, le solde est de : {compte2.Solde} €");
@@ -35,9 +26,7 @@
 
             Console.WriteLine($"Le titulaire {p1.Nom} {p1.Prenom} à comme avoirs : {banque1.AvoirDesComptes(p1)} €");
 
-            Epargne compte3 = new Epargne();
-            compte3.Titulaire = p1;
-            compte3.Numero = "BE75 1234 1234 1234";
+            Epargne compte3 = new Epargne("BE75 1234 1234 1234", p1);
             compte3.Depot(10_000);
             Console.WriteLine($"Sur le compte {compte3.Numero}, le solde est de : {compte3.Solde} €");
             compte3.Retrait(500);
