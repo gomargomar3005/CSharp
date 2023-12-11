@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exo_Banque
 {
-    internal abstract class Compte
+    internal abstract class Compte : IBanker //,ICustomer //Pas exclus de mettre les deux interfaces
     {
         public string Numero { get; set; }
         public double Solde { get; private set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exo_Banque
 {
-    internal class Courant : Compte
+    internal class Courant : Compte, IBanker
     {
         private double _ligneDeCredit;
 

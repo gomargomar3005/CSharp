@@ -45,7 +45,7 @@
 
             banque1.Ajouter(compte3);
 
-            Compte compteExemple = banque1["BE55 1234 1234 1234"];
+            IBanker compteExemple = banque1["BE55 1234 1234 1234"];
 
             Console.WriteLine($"Le titulaire {compteExemple.Titulaire.Nom} {compteExemple.Titulaire.Prenom} à comme avoirs : {banque1.AvoirDesComptes(compteExemple.Titulaire)} €");
 
@@ -55,6 +55,8 @@
             Console.WriteLine($"Sur le compte {compte2.Numero}, le solde est de : {compte2.Solde} €");
             compte3.AppliquerInteret();
             Console.WriteLine($"Sur le compte {compte3.Numero}, le solde est de : {compte3.Solde} €");
+
+            
         }
     }
 }
