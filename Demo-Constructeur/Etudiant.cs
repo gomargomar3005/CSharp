@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Demo_Constructeur
 {
-    internal class Etudiant
+    internal class Etudiant : Personne
     {
-        public string Nom { get; set; }
-        public string Prenom { get; set; }
 
         private List<int> _notes;
         public int[] Notes
@@ -30,26 +28,16 @@ namespace Demo_Constructeur
             }
         }
 
-        private Etudiant() 
-        { 
+        public Etudiant(string nom, string prenom) : base(nom, prenom)
+        {
             _notes = new List<int>();
         }
-        private Etudiant(int[] notes)
+
+        public Etudiant(string nom, string prenom, int[] notes) : base(nom, prenom)
         {
             _notes = new List<int>(notes);
         }
 
-        public Etudiant(string nom, string prenom) : this() 
-        {
-            Nom = nom;
-            Prenom = prenom;
-        }
-
-        public Etudiant(string nom, string prenom, int[] notes) : this(notes)
-        {
-            Nom = nom;
-            Prenom = prenom;
-        }
         //Un constructeur peut utiliser, tout comme les méthodes, des mots-clé à ses paramètres
         //public Etudiant(string nom, string prenom, params int[] notes) : this(notes)
         //{
