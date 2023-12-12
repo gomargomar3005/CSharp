@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exo_Banque
+namespace Exo_Banque.Models
 {
     internal class Banque
     {
@@ -41,14 +41,14 @@ namespace Exo_Banque
 
         public void Supprimer(string numero)
         {
-            if(numero is null) return;
+            if (numero is null) return;
             if (!_comptes.ContainsKey(numero)) return;
             _comptes.Remove(numero);
         }
 
         public double AvoirDesComptes(Personne personne)
         {
-            if(personne is null) return -1; //AvoirDesComptes est strictement positif, donc -1 est impossible, on garde -1 pour indiquer une erreur, plus tard utilisation des exceptions
+            if (personne is null) return -1; //AvoirDesComptes est strictement positif, donc -1 est impossible, on garde -1 pour indiquer une erreur, plus tard utilisation des exceptions
             List<Compte> comptes = new List<Compte>();
             foreach (Compte compte in _comptes.Values)
             {
@@ -57,7 +57,7 @@ namespace Exo_Banque
                     comptes.Add(compte);
                 }
             }
-            if(comptes.Count <= 0) return -1; //Gérer les exceptions
+            if (comptes.Count <= 0) return -1; //Gérer les exceptions
             double avoir = 0;
             foreach (Compte compte in comptes)
             {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exo_Banque
+namespace Exo_Banque.Models
 {
     internal class Personne
     {

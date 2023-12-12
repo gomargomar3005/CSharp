@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Exo_Banque.Exceptions;
+using Exo_Banque.Interfaces;
 
-namespace Exo_Banque
+namespace Exo_Banque.Models
 {
     internal abstract class Compte : IBanker //,ICustomer //Pas exclus de mettre les deux interfaces
     {
@@ -24,10 +26,10 @@ namespace Exo_Banque
             Solde = solde;
         }
 
-        
+
         public void Depot(double montant)
         {
-            if (montant <= 0) return;
+            if (montant <= 0) throw new ArgumentOutOfRangeException(nameof(montant), "Doit être supérieur à 0.");
             Solde += montant;
         }
 
@@ -38,8 +40,8 @@ namespace Exo_Banque
 
         protected void Retrait(double montant, double limite)
         {
-            if (montant <= 0) return; //Exception
-            if (montant > Solde + limite) return; //Exception
+            if (montant <= 0) throw new ArgumentOutOfRangeException(nameof(montant), "Doit être supérieur à 0.");
+            if (montant > Solde + limite) throw new SoldeInsuffisantException(montant, Solde, limite);
             Solde -= montant;
         }
         protected abstract double CalculInteret();
@@ -51,8 +53,8 @@ namespace Exo_Banque
 
         public static double operator +(Compte left, Compte right)
         {
-            double leftSolde = (left.Solde < 0) ? 0 : left.Solde;
-            double rightSolde = (right.Solde < 0) ? 0 : right.Solde;
+            double leftSolde = left.Solde < 0 ? 0 : left.Solde;
+            double rightSolde = right.Solde < 0 ? 0 : right.Solde;
             return leftSolde + rightSolde;
         }
 
