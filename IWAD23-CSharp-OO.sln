@@ -29,19 +29,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Interface", "Demo-Inte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Interface02", "Demo-Interface02\Demo-Interface02.csproj", "{6B790CBA-799C-4988-8D67-A58D7054D163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Constructeur", "Demo-Constructeur\Demo-Constructeur.csproj", "{15625744-B63D-4EB9-B360-0AC990187A7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Constructeur", "Demo-Constructeur\Demo-Constructeur.csproj", "{15625744-B63D-4EB9-B360-0AC990187A7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-IDisposable", "Demo-IDisposable\Demo-IDisposable.csproj", "{6EF2F3D4-A438-4E9A-8FCA-807D7A3A7927}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-IDisposable", "Demo-IDisposable\Demo-IDisposable.csproj", "{6EF2F3D4-A438-4E9A-8FCA-807D7A3A7927}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Exception", "Demo-Exception\Demo-Exception.csproj", "{8C326E67-DB39-406E-AE6F-F340F61A904F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Exception", "Demo-Exception\Demo-Exception.csproj", "{8C326E67-DB39-406E-AE6F-F340F61A904F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Exception-02", "Demo-Exception-02\Demo-Exception-02.csproj", "{C531EB93-1CF8-476C-ACDD-05FBD3EF71EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Exception-02", "Demo-Exception-02\Demo-Exception-02.csproj", "{C531EB93-1CF8-476C-ACDD-05FBD3EF71EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Delegues-01", "Demo-Delegues-01\Demo-Delegues-01.csproj", "{D3A024CF-4FCD-4FE0-83D7-D81FCD1D62BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Delegues-01", "Demo-Delegues-01\Demo-Delegues-01.csproj", "{D3A024CF-4FCD-4FE0-83D7-D81FCD1D62BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Delegues-02", "Demo-Delegues-02\Demo-Delegues-02.csproj", "{58FC18D9-D8FD-48C4-9468-9C5232A6DC24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Delegues-02", "Demo-Delegues-02\Demo-Delegues-02.csproj", "{58FC18D9-D8FD-48C4-9468-9C5232A6DC24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Delegues-03", "Demo-Delegues-03\Demo-Delegues-03.csproj", "{673A9247-1734-4A5D-A34F-E051DA20C060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Delegues-03", "Demo-Delegues-03\Demo-Delegues-03.csproj", "{673A9247-1734-4A5D-A34F-E051DA20C060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo-Delegue01", "Exo-Delegue01\Exo-Delegue01.csproj", "{64413FAE-4E6D-427B-BEAA-E61A00C66E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +123,10 @@ Global
 		{673A9247-1734-4A5D-A34F-E051DA20C060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{673A9247-1734-4A5D-A34F-E051DA20C060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{673A9247-1734-4A5D-A34F-E051DA20C060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64413FAE-4E6D-427B-BEAA-E61A00C66E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64413FAE-4E6D-427B-BEAA-E61A00C66E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64413FAE-4E6D-427B-BEAA-E61A00C66E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64413FAE-4E6D-427B-BEAA-E61A00C66E5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +150,7 @@ Global
 		{D3A024CF-4FCD-4FE0-83D7-D81FCD1D62BF} = {8C3FB272-3B3E-4855-B306-3F4467445826}
 		{58FC18D9-D8FD-48C4-9468-9C5232A6DC24} = {8C3FB272-3B3E-4855-B306-3F4467445826}
 		{673A9247-1734-4A5D-A34F-E051DA20C060} = {8C3FB272-3B3E-4855-B306-3F4467445826}
+		{64413FAE-4E6D-427B-BEAA-E61A00C66E5D} = {700AABFC-3664-4CC3-AA5B-3829C348C47D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E6B0A86-DD53-4BF5-B2DA-B97F4133983C}
