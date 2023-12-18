@@ -11,6 +11,7 @@
 
             cw.Traiter(v1);
             cw.Traiter(v2);
+            //cw.LavageAvecCire();
             cw.Traiter(v3);
 
         }

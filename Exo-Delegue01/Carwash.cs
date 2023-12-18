@@ -11,12 +11,19 @@ namespace Exo_Delegue01
     {
         private Vehicule _traitement;
 
-        public Carwash()
+        public Carwash() 
         {
             _traitement = Preparer;
             _traitement += Laver;
             _traitement += Secher;
             _traitement += Finaliser;
+
+            //LavageClassique;
+        }
+
+        private void Cirer(Voiture v)
+        {
+            Console.WriteLine($"je cire la voiture : {v.Plaque}");
         }
         private void Preparer(Voiture v)
         {
@@ -36,6 +43,23 @@ namespace Exo_Delegue01
         {
             Console.WriteLine($"je finalise la voiture : {v.Plaque}");
         }
+
+        //public LavageClassique()
+        //{
+        //    _traitement = Preparer;
+        //    _traitement += Laver;
+        //    _traitement += Secher;
+        //    _traitement += Finaliser;
+        //}
+
+        //public LavageAvecCire()
+        //{
+        //    _traitement = Preparer;
+        //    _traitement += Laver;
+        //    _traitement += Cirer;
+        //    _traitement += Secher;
+        //    _traitement += Finaliser;
+        //}
 
         public void Traiter(Voiture v)
         {
